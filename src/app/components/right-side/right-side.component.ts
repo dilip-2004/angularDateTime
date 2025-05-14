@@ -10,7 +10,7 @@ import { Component, inject } from '@angular/core';
 })
 export class RightSideComponent {
 
-  private apiurl="http://localhost/publish/webapi5/api/";
+  private apiurl="https://datetimewebapi.runasp.net/api/";
   timeZoneId:string='';
   selectedTime:string="Time Zone Not Selected";
   isLoading:boolean=false;
