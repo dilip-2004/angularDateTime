@@ -1,0 +1,13 @@
+div {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+app-left-side, app-right-side {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}

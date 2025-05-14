@@ -1,0 +1,19 @@
+<div>
+  <h3>All Time Zone</h3>
+  <div>
+    <select (change)="selectTimeZone($event)">
+      <option>select time zone</option>
+      @for (timeZone of $timeZones | async; track timeZone; let ind=$index) {
+        <option [value]="timeZone.id" >{{ind+1}} {{timeZone.displayName}}</option>
+      }
+    </select>
+  </div>
+  <div>
+    <h3 [style.color]="selectedTime!='Time Zone Not Selected' ? 'teal' : 'black'">selected Time Zone</h3>
+    @if (isLoading) {
+      <p>loading...</p>
+    } @else {
+      <p>{{selectedTime}}</p>
+    }
+  </div>
+</div>
